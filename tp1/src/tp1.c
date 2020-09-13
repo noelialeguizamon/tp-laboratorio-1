@@ -2,7 +2,10 @@
 b) Calcular la resta (A-B)
 c) Calcular la division (A/B)
 d) Calcular la multiplicacion (A*B)
-e) Calcular el factorial (A!)*/
+e) Calcular el factorial (A!)
+
+NOELIA LEGUIZAMON 1E
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,8 +22,8 @@ int main() {
 	int resultadoSuma=0;
 	int resultadoResta=0;
 	int resultadoMultiplicacion=0;
-//	int resulFact1=0;
-//	int resulFact2=0;
+	int resulFact1=0;
+	int resulFact2=0;
 	float resultadoDivision;
 
 	printf("ingrese numero: ");
@@ -48,12 +51,6 @@ int main() {
 
 	printf("\nEl resultado de %d * %d es : %d", operando1,operando2,resultadoMultiplicacion);
 
-	//hago el factorial de cada operando...como merd lo hago!!!!!
-/*	resulFact1=factorial1(operando1);
-	resulFact2=factorial2(operando2);
-
-	printf("\nEl factorial de %d es: %d \nEl factorial de %d es: %d",operando1,resulFact1(operando1),operando2,resulFact2(operando2));
-*/
 	//uso mi funcion de dividir
 	resultadoDivision=division(operando1,operando2);
 	if (operando2==0){
@@ -62,5 +59,13 @@ int main() {
 	{
 	printf("\nEl resultado de %d / %d es: %.2f",operando1,operando2,resultadoDivision);
 	}
+
+	//hago el factorial de cada operando
+		resulFact1=factorial(operando1);
+		resulFact2=factorial(operando2);
+
+		printf("\nEl factorial de %d es: %d",operando1,resulFact1);
+		printf("\nEl factorial de %d es: %d ", operando2, resulFact2);
+
 	return EXIT_SUCCESS;
 }

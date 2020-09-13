@@ -44,12 +44,21 @@
 
 	}
 
-/*	int factorial(int num1, int num2)
+	int factorial(int num1)
 	{
+
+		int factorial=1;
+
+		for(int i=1;i<=num1;i++){
+
+			factorial=factorial*i;
+		}
+
+		return factorial;
 
 
 	}
-*/
+
 	float division(int num1, int num2)
 	{	float resultadoDivision;
 

@@ -30,10 +30,9 @@
 	int multiplicacion(int num1, int num2);
 	/* brief realiza un factorial sobre cada numero ingresado
 	 * param me da el 1er numero para realizar el factorial
-	 * param me da el 2do numero para realizar el factorial
 	 * return me devuelve el factorial del 1ro y 2do
 	 * */
-//	int factorial(int num1, int num2);
+	int factorial(int num1);
 	/* brief realiza una division
 	 * param me da el 1er numero para realizar la operacion dividir
 	 * param me da el 2do numero para realizar la operacion dividir
